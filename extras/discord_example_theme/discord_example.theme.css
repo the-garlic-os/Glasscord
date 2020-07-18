@@ -153,6 +153,24 @@
 	background: var(--background-titlebar);
 	position: absolute;
 	left: 0; top: 0;
+	z-index: -1; /* Stay under the window buttons */
+}
+
+.container-1r6BKw {
+	padding-top: 0;
+	padding-bottom: 12px;
+	margin-bottom: 12px;
+	height: auto;
+	transform: translateY(12px);
+}
+
+.container-1r6BKw::after {
+	content: "";
+	position: absolute;
+	left: 0; top: -12px;
+	width: 100%;
+	height: 12px;
+	background: var(--background-secondary);
 }
 
 .premiumPromo-fVlLu- {
